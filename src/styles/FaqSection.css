@@ -1,0 +1,130 @@
+.faq {
+  background: var(--bg-light);
+  border-top: 1px solid var(--border-light);
+}
+
+.faq__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--section-pad);
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.faq__more {
+  font-size: 13px;
+  color: var(--text-hint);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition);
+}
+
+.faq__more:hover {
+  color: var(--green-accent);
+}
+
+/* 아이템 */
+.faq__item {
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.faq__item:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+.faq__q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: color var(--transition);
+  font-family: var(--font-body);
+}
+
+.faq__q:hover {
+  color: var(--green-accent);
+}
+
+.faq__q-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green-accent);
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.faq__q-text {
+  font-size: 15px;
+  color: var(--text-main);
+  flex: 1;
+  line-height: 1.5;
+}
+
+.faq__q:hover .faq__q-text {
+  color: var(--green-accent);
+}
+
+.faq__chevron {
+  font-size: 18px;
+  color: var(--text-hint);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faq__chevron--open {
+  transform: rotate(180deg);
+}
+
+/* 답변 슬라이드 */
+.faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq__answer--open {
+  grid-template-rows: 1fr;
+}
+
+.faq__answer-inner {
+  overflow: hidden;
+}
+
+.faq__a {
+  display: flex;
+  gap: 16px;
+  padding: 0 0 24px 44px;
+}
+
+.faq__a-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 700;
+  color: #C8C0B0;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.faq__a-text {
+  font-size: 14px;
+  color: var(--text-sub);
+  line-height: 1.9;
+}
