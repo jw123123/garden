@@ -1,16 +1,12 @@
-.season {
-  background: var(--bg-cream);
-}
+.season {}
 
 .season__inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: var(--section-pad);
+  padding: 0 var(--padding-l);
 }
 
 .season__layout {
+  position: relative;
   display: grid;
-  grid-template-columns: 200px 1fr;
   gap: 32px;
   align-items: start;
 }
@@ -20,8 +16,11 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  position: sticky;
-  top: 80px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 1;
+  width: 90%;
 }
 
 .season__tab {
@@ -29,28 +28,21 @@
   align-items: center;
   gap: 14px;
   padding: 20px 0;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 2px solid #fff;
   cursor: pointer;
-  background: none;
-  border-left: none;
-  border-right: none;
-  border-top: none;
   text-align: left;
   transition: color var(--transition);
   font-family: var(--font-display);
   font-size: 32px;
   font-weight: 700;
-  color: #C8C0B0;
-  letter-spacing: -0.02em;
-}
-
-.season__tab:first-child {
-  border-top: 1px solid var(--border-light);
+  color:#fff;
+  opacity: 0.7;
 }
 
 .season__tab.active,
-.season__tab:hover {
-  color: var(--green-dark);
+.season__tab:hover, .season__tab.active .season__tab-dot,
+.season__tab:hover .season__tab-dot {
+  opacity: 1;
 }
 
 .season__tab-dot {
@@ -62,16 +54,11 @@
   transition: opacity var(--transition);
 }
 
-.season__tab.active .season__tab-dot,
-.season__tab:hover .season__tab-dot {
-  opacity: 1;
-}
-
 /* 이미지 그리드 - 2분할 */
 .season__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 420px;
+  grid-template-rows: 865px;
   gap: 6px;
   position: relative;
 }

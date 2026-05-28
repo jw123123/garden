@@ -1,34 +1,33 @@
 .hero {
+  height: 100%;
   background: var(--bg-cream);
   text-align: center;
-  padding: 72px 24px 56px;
-  overflow: hidden;
+}
+.heroTitle{
+  padding: 300px 0 250px;
 }
 
-.hero__title {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: clamp(64px, 12vw, 112px);
-  color: var(--green-dark);
-  letter-spacing: -0.03em;
-  line-height: 0.95;
+.titleL {
+  font-family: var(--en-font);
+  font-weight: var(--fw-bold);
+  font-size: 20em;
+  color: var(--point-color);
+  line-height: 0.5;
   animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.hero__sub {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 16px;
-  color: var(--green-accent);
-  margin-top: 12px;
+.titleS {
+  font-family: var(--en-font);
+  font-size: var(--fs-h2);
+  color: var(--point-color);
   letter-spacing: 0.14em;
   animation: heroFadeUp 0.9s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* 영상 placeholder */
-.hero__video-wrap {
+.heroVideoWrap {
   width: 100%;
-  height: clamp(280px, 42vw, 560px);
+  height: 810px;
   background: var(--green-dark);
   position: relative;
   overflow: hidden;
@@ -37,18 +36,13 @@
   justify-content: center;
 }
 
-.hero__video-placeholder {
+.heroVideo {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(160deg, #1E3A1E 0%, #2D5A2D 40%, #3A6B3A 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+object-fit: cover;
+width: 100%;
 }
 
-.hero__video-icon {
+.herovideo-icon {
   width: 64px;
   height: 64px;
   border: 2px solid rgba(255,255,255,0.3);
@@ -58,12 +52,12 @@
   justify-content: center;
 }
 
-.hero__video-icon svg {
+.herovideo-icon svg {
   fill: rgba(255,255,255,0.6);
   margin-left: 4px;
 }
 
-.hero__video-label {
+.herovideo-label {
   font-size: 13px;
   color: rgba(255,255,255,0.4);
   letter-spacing: 0.1em;

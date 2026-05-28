@@ -1,0 +1,17 @@
+.slogan{
+  height: 80vh;
+  padding: 0 var(--padding-l);
+  display: flex;
+  align-items: center;
+}
+h2{
+  margin: auto;
+  color: var(--point-color);
+  font-family: var(--font-title);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-exbold);
+  line-height: 1.5;
+}
+.yellow{
+  color: var(--yellow);
+}

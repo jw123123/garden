@@ -1,6 +1,8 @@
+import React from 'react';
 import './styles/App.css';
-import Navbar        from './components/Navbar';
+import Header        from './components/Header';
 import Hero          from './components/Hero';
+import Slogan          from './components/Slogan';
 import SeasonSection from './components/SeasonSection';
 import ProgramSection from './components/ProgramSection';
 import NewsSection   from './components/NewsSection';
@@ -10,8 +12,9 @@ import Footer        from './components/Footer';
 export default function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Hero />
+      <Slogan />
       <SeasonSection />
       <ProgramSection />
       <NewsSection />

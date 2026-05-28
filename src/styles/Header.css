@@ -1,0 +1,51 @@
+.hd {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-color);
+  padding: var(--padding-m) var(--padding-l);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hdGroup {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.hdLink {
+  font-family: var(--font-body);
+  font-size: var(--fz-sub);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.hdLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--green-accent);
+  transition: width var(--transition);
+}
+
+.hdLink:hover::after {
+  width: 100%;
+}
+
+.hdLogo {
+  font-family: var(--en-font);
+  font-size: var(--fs-main);
+  font-weight: var(--fw-bold);
+  color: var(--point-color);
+  letter-spacing: -1px;
+}

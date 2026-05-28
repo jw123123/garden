@@ -9,7 +9,7 @@
   --bg-color: #F7F5EF;
   --green-dark: #24382D;
   --green-light: #91A58F;
-  --text-main: #2b2b2b;
+  --text-color: #2b2b2b;
   --point-color: #2F4F3E;
   --blue: #6E8FA3;
   --red: #B56A5D;
@@ -17,9 +17,10 @@
   --text-hint: #9A9A9A;
   --border: rgba(43, 43, 43, 0.3);
   --border-light: rgba(43, 43, 43, 0.2);
-  --font-display: 'Amiri', 'Cormorant Garamond', serif;
+  --en-font: 'Amiri', 'Cormorant Garamond', serif;
   --font-title: 'NanumSquare Neo OTF', 'pretendard', serif;
   --font-body:  'MaruBuri', 'Noto Serif KR', serif;
+  --fs-h1: 64px;
   --fs-h2: 56px;
   --fs-h3: 32px;
   --fs-main: 24px;
@@ -29,7 +30,7 @@
   --fw-regular: 400; 
   --fw-smbold: 500; 
   --fw-bold: 600; 
-  --fw-exbold: 700; 
+  --fw-exbold: 800; 
   --section-pad: 96px 48px;
   --max-w: 1920px;
   --padding-s: 16px;
@@ -73,4 +74,9 @@ body {
 
 #root {
   position: relative;
+}
+
+button{
+  background-color: transparent;
+  border: 0;
 }
