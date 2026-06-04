@@ -1,22 +1,35 @@
-import React from 'react';
-import '../styles/Header.css';
+import { Link } from "react-router-dom";
+import "../styles/Header.css";
 
-const LEFT_LINKS = ['식물원소개', '프로그램'];
-const RIGHT_LINKS = ['자료실', '커뮤니티'];
+const LEFT_LINKS = [
+  { name: "식물원소개", path: "/about" },
+  { name: "프로그램", path: "/program" },
+];
+
+const RIGHT_LINKS = [
+  { name: "자료실", path: "/archive" },
+  { name: "커뮤니티", path: "/community" },
+];
+
 
 export default function Header() {
   return (
     <nav className="hd">
       <div className="hdGroup">
         {LEFT_LINKS.map((l) => (
-          <a key={l} href="#" className="hdLink">{l}</a>
+          <Link key={l.path} to={l.path} className="hdLink">
+            {l.name}
+          </Link>
         ))}
       </div>
-      
-      <span className="hdLogo">Seongnam Garden</span>
+
+      <Link to="/" className="hdLogo">Seongnam Garden</Link>
+
       <div className="hdGroup">
         {RIGHT_LINKS.map((l) => (
-          <a key={l} href="#" className="hdLink">{l}</a>
+          <Link key={l.path} to={l.path} className="hdLink">
+            {l.name}
+          </Link>
         ))}
       </div>
     </nav>

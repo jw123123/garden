@@ -1,34 +1,42 @@
 import { useState } from 'react';
-import '../styles/SeasonSection.css';
+import '../styles/Season.css';
+import spring1 from '../images/spring1.jpg';
+import spring2 from '../images/spring2.jpg';
+import summer1 from '../images/summer1.jpg';
+import summer2 from '../images/summer2.jpg';
+import fall1 from '../images/fall1.jpg';
+import fall2 from '../images/fall2.jpg';
+import winter1 from '../images/winter1.jpg';
+import winter2 from '../images/winter2.jpg';
 
 const SEASONS = [
   {
     id: 'spring',
     label: '봄',
     dot: '#fff',
-    leftGradient: 'linear-gradient(160deg, #fce4ec 0%, #f48fb1 50%, #e91e63 100%)',
-    rightGradient: 'linear-gradient(135deg, #fffde7 0%, #fff176 40%, #fdd835 80%, #f9a825 100%)',
+    leftimage: spring1,
+    rightimage: spring2,
   },
   {
     id: 'summer',
     label: '여름',
     dot: '#fff',
-    leftGradient: 'linear-gradient(160deg, #e8f5e9 0%, #66bb6a 50%, #2e7d32 100%)',
-    rightGradient: 'linear-gradient(135deg, #e8eaf6 0%, #9fa8da 40%, #3949ab 100%)',
+    leftimage: summer1,
+    rightimage: summer2,
   },
   {
     id: 'autumn',
     label: '가을',
     dot: '#fff',
-    leftGradient: 'linear-gradient(160deg, #fff8e1 0%, #ffcc80 50%, #e65100 100%)',
-    rightGradient: 'linear-gradient(135deg, #fce4ec 0%, #f48fb1 40%, #ad1457 100%)',
+    leftimage: fall1,
+    rightimage: fall2,
   },
   {
     id: 'winter',
     label: '겨울',
     dot: '#fff',
-    leftGradient: 'linear-gradient(160deg, #e3f2fd 0%, #90caf9 50%, #1565c0 100%)',
-    rightGradient: 'linear-gradient(135deg, #fce4ec 0%, #ef9a9a 40%, #c62828 100%)',
+    leftimage: winter1,
+    rightimage: winter2,
   },
 ];
 
@@ -50,7 +58,7 @@ function HeartIcon({ filled }) {
   );
 }
 
-export default function SeasonSection() {
+export default function Season() {
   const [active, setActive] = useState('spring');
   const [likes, setLikes] = useState(
     Object.fromEntries(
@@ -86,43 +94,42 @@ export default function SeasonSection() {
 
   return (
     <section className="season">
-      <p className="season__caption">계절별 가장 사랑받는 식물</p>
-      <div className="season__inner">
-        <div className="season__layout">
-          {/* 계절 탭 */}
+      <div className="seasonContainer">
+        <h2 className="seasonTitle">계절별 가장 사랑받는 식물</h2>
+        <div className="seasonWrap">
+
+          {/* 계절 사이드바 */}
+          <div className="seasonLabel">
+            {SEASONS.map((s) => (
+              <button
+                key={s.id}
+                className={`seasonTab${active === s.id ? ' active' : ''}`}
+                onMouseEnter={() => setActive(s.id)}
+                onClick={() => setActive(s.id)}
+              >
+                <span className="tabDot" style={{ background: s.dot }} />
+                {s.label}
+              </button>
+            ))}
+          </div>
 
           {/* 2분할 이미지 */}
-          <div className="season__grid">
-            {/* 왼쪽 이미지 + 계절 라벨 */}
-            <div className="season__img">
-              <div className="season__img-inner" style={{ background: season.leftGradient }} />
-              <div className="season__sidebar">
-                {SEASONS.map((s) => (
-                  <button
-                    key={s.id}
-                    className={`season__tab${active === s.id ? ' active' : ''}`}
-                    onMouseEnter={() => setActive(s.id)}
-                    onClick={() => setActive(s.id)}
-                  >
-                    <span className="season__tab-dot" style={{ background: s.dot }} />
-                    {s.label}
-                  </button>
-                ))}
-              </div>
+          <div className="seasonGrid">
+            
+            {/* 왼쪽 이미지 */}
+            <div className="seasonImg">
+              <img src={season.leftimage} alt={season.id} className="seasonImgInner" />
             </div>
 
-            {/* 오른쪽 이미지 + 하트 */}
-            <div className="season__img">
-              <div className="season__img-inner" style={{ background: season.rightGradient }} />
+            {/* 오른쪽 이미지 */}
+            <div className="seasonImg">
+              <img src={season.rightimage} alt={season.id} className="seasonImgInner" />
 
-              {/* G4 뱃지 */}
-              <span className="season__badge">G4</span>
-
-              {/* 하트 좋아요 */}
-              <div className="season__heart-wrap" onClick={handleHeart}>
+              {/* 하트 */}
+              <div className="heartWrap" onClick={handleHeart}>
                 <button
                   className={[
-                    'season__heart-btn',
+                    'heartBtn',
                     likeState.liked ? 'liked' : '',
                     likeState.popping ? 'pop' : '',
                   ].join(' ').trim()}
@@ -130,7 +137,7 @@ export default function SeasonSection() {
                 >
                   <HeartIcon filled={likeState.liked} />
                 </button>
-                <span className="season__heart-count">
+                <span className="heartCount">
                   {likeState.count.toLocaleString()}
                 </span>
               </div>

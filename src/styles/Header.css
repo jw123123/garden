@@ -1,10 +1,10 @@
 .hd {
-  position: absolute;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 100;
   background: var(--bg-color);
-  padding: var(--padding-m) var(--padding-l);
+  padding: var(--padding-s) var(--padding-l);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,6 @@
   font-weight: var(--fw-bold);
   letter-spacing: 0.04em;
   color: var(--text-color);
-  text-decoration: none;
   position: relative;
   padding-bottom: 2px;
 }

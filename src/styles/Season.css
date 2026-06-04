@@ -1,0 +1,150 @@
+.season {}
+
+.seasonContainer {
+  padding: var(--section-pad);
+}
+
+.seasonTitle {
+  color: var(--blue);
+  font-family: var(--font-body);
+  font-weight: normal;;
+}
+
+.seasonWrap {
+  position: relative;
+  display: grid;
+  align-items: start;
+}
+
+/* 계절 사이드바 */
+.seasonLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  z-index: 1;
+  width: 43%;
+  transition: 0.5s;
+}
+
+.seasonTab {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--transition);
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  color:#fff;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.seasonTab.active,
+.seasonTab:hover, .seasonTab.active .tabDot,
+.seasonTab:hover .tabDot, 
+.seasonTab:hover .seasonImg
+{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.tabDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+/* 이미지 그리드 - 2분할 */
+.seasonGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.seasonImg {
+  overflow: hidden;
+  position: relative;
+}
+
+.seasonImgInner {
+  width: 100%;
+  height: 860px;
+  object-position: center;
+  object-fit: cover;
+  transition: 0.8s;
+}
+
+
+/* 하트 */
+.heartWrap {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transform: scale(1.3);
+}
+
+.heartBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartBtn:active {
+  transform: scale(0.85);
+}
+
+.heartBtn svg {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+}
+
+.heartBtn.liked svg {
+  transform: scale(1.18);
+}
+
+.heartCount {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  min-width: 24px;
+  transition: all 0.2s ease;
+}
+
+/* 팝 애니메이션 */
+@keyframes heartPop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.4); }
+  70%  { transform: scale(0.9); }
+  100% { transform: scale(1.18); }
+}
+
+
+@media (max-width: 720px) {
+  .seasonlayout { grid-template-columns: 1fr; }
+  .seasonsidebar { flex-direction: row; gap: 8px; position: static; }
+  .seasonTab { font-size: 20px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-md); }
+  .seasonTab:first-child { border-top: 1px solid var(--border); }
+  .seasonGrid { grid-template-rows: 280px; }
+}

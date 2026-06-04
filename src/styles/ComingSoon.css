@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+.coming-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 8rem 4rem 10rem;
+  text-align: center;
+}
+
+.coming-bg-text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  color: rgba(47, 79, 62, 0.055);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 320px;
+  font-weight: 700;
+  line-height: 0.8;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.coming-eyebrow {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2.4rem;
+  color: #bc9a50;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.coming-title {
+  position: relative;
+  z-index: 2;
+  color: #2f4f3e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.coming-desc {
+  position: relative;
+  z-index: 2;
+  margin-top: 0.6em;
+  color: rgba(47, 79, 62, 0.78);
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.03em;
+}
+
+.coming-actions {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 1.2em;
+  margin-top: 3.5em;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 18rem;
+  height: 5.6rem;
+  padding: 0 2.8rem;
+  border: 1px solid #2f4f3e;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: transform 0.35s ease, color 0.35s ease, background-color 0.35s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.4rem);
+}
+
+.btn-line {
+  color: #2f4f3e;
+  background-color: transparent;
+}
+
+.btn-line:hover {
+  color: #f7f5ef;
+  background-color: #2f4f3e;
+}

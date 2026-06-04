@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import '../styles/FaqSection.css';
+import '../styles/Faq.css';
 
 const FAQS = [
   {
     q: '성남식물원 입장권 인터넷 사전 발권은 어떻게 하나요?',
-    a: '성남시 식물원 공식 홈페이지 또는 네이버 예약을 통해 사전 예약이 가능합니다. 방문 7일 전부터 예약하실 수 있으며, 현장 발권보다 빠르게 입장하실 수 있습니다.',
+    a: '성남시 식물원 공식 홈페이지 또는 네이버 예약원 공식 홈페이지 또는 네이버 예약을원 공식 홈페이지 또는 네이버 예약을을 통해 사전 예약이 가능합니다. 방문 7일 전부터 예약하실 수 있으며, 현장 발권보다 빠르게 입장하실 수 있습니다.',
   },
   {
     q: '입장 시 알아야 할 사항은 무엇인가요?',
@@ -20,7 +20,7 @@ const FAQS = [
   },
 ];
 
-export default function FaqSection() {
+export default function Faq() {
   const [openIdx, setOpenIdx] = useState(null);
 
   const toggle = (i) => setOpenIdx(openIdx === i ? null : i);
@@ -29,8 +29,8 @@ export default function FaqSection() {
     <section className="faq">
       <div className="faq__inner">
         <div className="faq__header">
-          <h2 className="section-title">자주하는 질문</h2>
-          <a href="#" className="faq__more">더보기 →</a>
+          <h2 className="faqTitle">자주하는 질문</h2>
+          <a href="#" className="more">더보기</a>
         </div>
 
         {FAQS.map((item, i) => {
@@ -41,8 +41,7 @@ export default function FaqSection() {
               <button className="faq__q" onClick={() => toggle(i)}>
                 <span className="faq__q-mark">Q.</span>
                 <span className="faq__q-text">{item.q}</span>
-                <span className={`faq__chevron${isOpen ? ' faq__chevron--open' : ''}`}>
-                  ∨
+                <span className={`faqArrow${isOpen ? ' icon faqOpen' : ' icon'}`}>
                 </span>
               </button>
 

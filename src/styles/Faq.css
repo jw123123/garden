@@ -1,0 +1,99 @@
+.faq {
+}
+
+.faq__inner {
+  margin: 0 auto;
+  padding: var(--section-pad);
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.faqTitle{
+  display: block;
+  padding: 0;
+}
+
+/* 아이템 */
+.faq__item {
+  margin-bottom: 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 25px 30px;
+}
+
+.faq__q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: color var(--transition);
+  font-family: var(--font-body);
+}
+
+.faq__q:hover {
+  color: var(--green-accent);
+}
+
+.faq__q-mark {
+  font-size: 20px;
+  width: 16px;
+}
+
+.faq__q-text {
+  font-size: var(--fs-sub);
+  color: var(--text-main);
+  flex: 1;
+}
+
+.faqArrow {
+}
+.faqArrow:before {
+  content: '\e313';
+  font-size: var(--fs-h3);
+}
+
+.faqOpen {
+  transform: rotate(180deg);
+}
+
+/* 답변 슬라이드 */
+.faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 80%;
+  transition: grid-template-rows 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq__answer--open {
+  grid-template-rows: 1fr;
+}
+
+.faq__answer-inner {
+  overflow: hidden;
+}
+
+.faq__a {
+  display: flex;
+  padding: 30px 0 0;
+  gap: 15px;
+}
+
+.faq__a-mark {
+  font-size: 20px;
+  width: 16px;
+  color: var(--red);
+}
+
+.faq__a-text {
+  font-size: var(--fs-sub);
+}

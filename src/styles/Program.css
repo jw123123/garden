@@ -1,0 +1,134 @@
+.program {
+}
+
+.programContainer {
+  margin: 0 auto;
+  padding: var(--section-pad);
+}
+
+/* 텍스트 */
+.programTxt {}
+.programTitle {}
+
+
+
+/* 카드 그리드 */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.programDesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-light);
+  line-height: 1.7;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+/* 5번째 아이템 = gardener */
+.cardGrid > *:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* 6번째 아이템 = greenhouse */
+.cardGrid > *:nth-child(6) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.card {
+  border-radius: var(--radius-sm);
+  height: 420px;
+  width: 100%;
+  position: relative;
+}
+
+.cardBg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 기본 라벨 (hover 전) */
+.cardLabel {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  font-size: var(--fs-main);
+  font-weight: var(--fw-bold);
+}
+
+.card:hover .cardLabel {
+  opacity: 0;
+}
+
+/* 검은 반투명 */
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 34px;
+  background: rgba(10, 20, 10, 0.7);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  font-size: var(--fs-sub);
+}
+
+.card:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardOverlay div {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ transform: translateY(8px);
+ transition: 0.5s;
+}
+
+.cardName {
+  font-size: var(--fs-main);
+  font-weight: var(--fw-bold);
+}
+
+.cardPeople, .cardTime, .cardDate{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardPeople:before{content: '\e7fd';}
+.cardTime:before{content: '\e8b5';}
+.cardDate:before{content: '\ebcc';}
+
+.dateTime {
+  align-items: flex-end;
+}
+
+.card:hover .cardOverlay div {
+  transform: translateY(0);
+}
+
+
+
+
+@media (max-width: 800px) {
+  .programinner { grid-template-columns: 1fr; gap: 32px; }
+  .programgrid { grid-template-rows: 130px 130px; }
+}

@@ -1,24 +1,19 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './styles/App.css';
-import Header        from './components/Header';
-import Hero          from './components/Hero';
-import Slogan          from './components/Slogan';
-import SeasonSection from './components/SeasonSection';
-import ProgramSection from './components/ProgramSection';
-import NewsSection   from './components/NewsSection';
-import FaqSection    from './components/FaqSection';
-import Footer        from './components/Footer';
+import Header from './components/Header';
+import Home from "./Home";
+import ComingSoon from './components/ComingSoon'
+import Footer from './components/Footer';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Slogan />
-      <SeasonSection />
-      <ProgramSection />
-      <NewsSection />
-      <FaqSection />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="*" element={<ComingSoon />} /> 
+      </Routes>
       <Footer />
     </>
   );
