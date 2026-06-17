@@ -1,5 +1,13 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Seongnam Garden Redesign_CODE&fontSize=90)
-# 🌿 Seongnam Garden Redesign
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F4F3E,100:8FAF8A&height=250&section=header&text=Seongnam%20Garden%20Redesign&fontColor=FFFFFF&fontSize=50"/>
+</p>
+
+<h1 align="center">🌿 Seongnam Garden Redesign</h1>
+
+<p align="center">
+정보를 넘어, 식물원의 경험으로
+</p>
+
 > **정보를 넘어, 식물원의 경험으로**
 
 성남시 식물원 웹사이트를 리디자인한 React 기반 프로젝트입니다.
