@@ -1,104 +1,125 @@
 ```md
 # 🌿 Seongnam Garden Redesign
 
-> 정보를 넘어, 식물원의 경험으로
+> **정보를 넘어, 식물원의 경험으로**
 
 성남시 식물원 웹사이트를 리디자인한 React 기반 프로젝트입니다.
-기존 사이트의 정보 중심 구조를 개선하고, 자연성과 계절감을 사용자 경험으로 전달하는 것을 목표로 제작하였습니다.
+기존 사이트의 정보 중심 구조를 개선하고, 자연성과 계절의 변화를 사용자 경험으로 전달하는 것을 목표로 제작하였습니다.
 
 ---
 
-## 📌 1. 프로젝트 Description
+# 📖 프로젝트 개요
 
-### 프로젝트명
-Seongnam Garden Redesign
+### 프로젝트 목적
 
-### 프로젝트 소개
-- React 기반 Single Page 웹사이트
-- 식물원의 자연성과 계절감을 강조한 UI/UX 리디자인
-- 감성적인 인터랙션과 직관적인 정보 탐색 구조 구현
+기존 성남시 식물원 홈페이지는 정보 제공에 초점을 맞추고 있어 식물원이 가진 자연적인 분위기와 계절의 변화를 충분히 전달하지 못하고 있었습니다.
+
+이에 사용자가 식물원의 브랜드 가치와 공간의 감성을 직관적으로 경험할 수 있도록 UI/UX를 리디자인하고 React 기반 Single Page로 구현하였습니다.
+
+### 프로젝트 목표
+
+- 자연 친화적인 브랜드 이미지 강화
+- 계절감을 활용한 인터랙션 구현
+- 직관적인 정보 탐색 구조 제공
+- 사용자 경험 중심의 UI 설계
+
+### 프로젝트 방식
+
+- 개인 프로젝트 (100%)
+- Figma를 활용한 UI 설계
+- React Component 기반 개발
+- Git을 통한 버전 관리
 
 ---
 
-## 📌 2. 프로젝트 정보
+# 🛠 Tech Stack
 
-### 📂 디렉토리 구조
+| Front-end | Design | Tool |
+| --------- | ------- | -------- |
+| React | Figma | VS Code |
+| JavaScript | Photoshop | Git |
+| SCSS | Illustrator | Claude AI |
+| jQuery | | |
+
+---
+
+# 🏗 Architecture
 
 ```
 
 src
 ├── assets
+│    ├── images
+│    └── video
 ├── components
-├── images
+├── pages
 ├── styles
 ├── App.js
-├── Home.js
 └── index.js
 
 ```
 
-### ✨ 주요 기능
+(아키텍처 이미지 또는 폴더 구조 이미지 추가 예정)
 
-- GNB Hover & Depth2 Slide Toggle
-- Hero Video & Typography
-- 계절별 식물 Hover 이미지 변경
-- 좋아요(하트) 카운트 기능
+---
+
+# ✨ 주요 기능
+
+- GNB Hover 및 Depth2 Slide Toggle
+- Hero 영상과 대형 타이포 구현
+- 계절 Hover에 따른 이미지 변경
+- 좋아요(하트) 카운트 인터랙션
 - 프로그램 카드 Hover Overlay
 - 소식 카테고리 필터링
-- FAQ Accordion
-- Footer 사이트맵 및 관람정보 제공
+- FAQ Accordion 구현
+- Footer 사이트맵 및 관람 정보 제공
 
-### 🛠 기술 스택
+> Preview Image
 
-- React
-- HTML
-- CSS
-- Figma
-- VS Code
-- Git
-- Photoshop
-- Premiere Pro
-
-### 🎨 디자인 원칙
-
-- Green 기반 컬러 시스템으로 자연 친화적인 브랜드 이미지 강화
-- 계절감을 전달하는 이미지 중심 레이아웃
-- Hover 및 Toggle 인터랙션을 통한 사용자 경험 향상
-- 정보 전달과 브랜드 경험을 함께 고려한 Single Page 구성
+(프로젝트 스크린샷 또는 GIF 삽입)
 
 ---
 
-## 📌 3. 저자
+# 👨‍💻 기여도 및 역할
 
-최지원
-
-UI/UX Design · Front-end Development
-
----
-
-## 📌 4. 프로젝트 상태 및 로드맵
-
-### Project Status
-
-✅ Completed
-
-### Roadmap
-
-- 반응형 웹 지원
-- API 연동
-- 프로그램 예약 기능 추가
-- 접근성 개선
+| 역할 | 기여도 |
+| -------- | -------- |
+| UI/UX 기획 | 100% |
+| Wireframe / Design | 100% |
+| React 개발 | 100% |
+| 인터랙션 구현 | 100% |
+| 퍼블리싱 | 100% |
 
 ---
 
-## 📌 5. 후기
+# 📈 결과 및 성과
+
+- 기존 정보 중심 구조를 브랜드 경험 중심 구조로 개선
+- Hover 및 Toggle 인터랙션을 통해 사용자 몰입도 향상
+- 계절 콘텐츠와 프로그램 정보를 직관적으로 탐색할 수 있도록 개선
+- 자연 친화적인 컬러 시스템과 감성적인 레이아웃을 적용하여 브랜드 아이덴티티 강화
+
+---
+
+# 🌱 Learn & Future
 
 ### 프로젝트를 통해 배운 점
 
-React 컴포넌트 기반 개발과 인터랙션 구현 방식을 익혔으며, 브랜드 경험을 고려한 UI/UX 설계의 중요성을 배울 수 있었습니다.
+React 컴포넌트 기반 개발 방식과 상태 관리, 다양한 인터랙션 구현 방식을 익힐 수 있었으며, 사용자 경험을 고려한 UI 설계의 중요성을 배울 수 있었습니다.
 
-### 아쉬운 점 및 발전 방향
+### 개선 사항
 
-현재는 Desktop Single Page 형태로 제작되었으며, 향후 반응형 웹과 데이터 연동 기능을 추가하여 실제 서비스 수준의 프로젝트로 발전시킬 계획입니다.
+- 모바일 반응형 지원
+- API 연동을 통한 실시간 데이터 관리
+- 프로그램 예약 기능 추가
+- 접근성(Accessibility) 개선
+
+---
+
+## 👤 Author
+
+**최지원**
+
+UI/UX Designer & Front-end Developer
 ```
 
