@@ -76,15 +76,9 @@ src
 
 ```
 
-<img width="196" height="220" alt="Image" src="https://github.com/user-attachments/assets/0cebb5ea-ca2b-481d-b9a5-9a64a825ddef" />
-
 ---
 
 # ✨ 주요 기능
-
-<table>
-<tr>
-<td width="55%" valign="top">
 
 - GNB Hover 및 Depth2 Slide Toggle
 - Hero 영상과 대형 타이포 구현
@@ -94,16 +88,6 @@ src
 - 소식 카테고리 필터링
 - FAQ Accordion 구현
 - Footer 사이트맵 및 관람 정보 제공
-
-</td>
-
-<td width="55%" align="center">
-
-<img src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" width="100%">
-
-</td>
-</tr>
-</table>
 
 ---
 
