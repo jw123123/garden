@@ -1,4 +1,3 @@
-```md
 # 🌿 Seongnam Garden Redesign
 
 > **정보를 넘어, 식물원의 경험으로**
@@ -121,5 +120,4 @@ React 컴포넌트 기반 개발 방식과 상태 관리, 다양한 인터랙션
 **최지원**
 
 UI/UX Designer & Front-end Developer
-```
 
