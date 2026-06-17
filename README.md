@@ -1,11 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F4F3E,100:8FAF8A&height=250&section=header&text=Seongnam%20Garden%20Redesign&fontColor=FFFFFF&fontSize=50"/>
-</p>
-
-<h1 align="center">🌿 Seongnam Garden Redesign</h1>
-
-<p align="center">
-정보를 넘어, 식물원의 경험으로
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:2F4F3E,100:7DA27D&height=200&text=Seongnam%20Garden%20Redesign&fontSize=42&fontColor=FFFFFF&desc=Information%20Beyond,%20Experience%20the%20Garden&descAlignY=67&descSize=18"/>
 </p>
 
 > **정보를 넘어, 식물원의 경험으로**
