@@ -74,8 +74,7 @@ src
 - Footer 사이트맵 및 관람 정보 제공
 
 > Preview Image
-
-(프로젝트 스크린샷 또는 GIF 삽입)
+![page_gif](https://github.com/user-attachments/assets/5d4052f9-770a-483a-b2d0-846aa89ecfa1)
 
 ---
 
