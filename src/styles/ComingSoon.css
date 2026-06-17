@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-.coming-hero {
+.comingHero {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.coming-bg-text {
+.comingBgText {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -27,7 +27,7 @@
   pointer-events: none;
 }
 
-.coming-eyebrow {
+.comingEyebrow {
   position: relative;
   z-index: 2;
   margin-bottom: 2.4rem;
@@ -39,7 +39,7 @@
   text-transform: uppercase;
 }
 
-.coming-title {
+.comingTitle {
   position: relative;
   z-index: 2;
   color: #2f4f3e;
@@ -50,7 +50,7 @@
   letter-spacing: -0.06em;
 }
 
-.coming-desc {
+.comingDesc {
   position: relative;
   z-index: 2;
   margin-top: 0.6em;
@@ -61,7 +61,7 @@
   letter-spacing: -0.03em;
 }
 
-.coming-actions {
+.comingActions {
   position: relative;
   z-index: 2;
   display: flex;
@@ -88,12 +88,12 @@
   transform: translateY(-0.4rem);
 }
 
-.btn-line {
+.btnLine {
   color: #2f4f3e;
   background-color: transparent;
 }
 
-.btn-line:hover {
+.btnLine:hover {
   color: #f7f5ef;
   background-color: #2f4f3e;
 }

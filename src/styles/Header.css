@@ -12,7 +12,7 @@
 
 .hdGroup {
   display: flex;
-  gap: 36px;
+  gap: 64px;
   align-items: center;
 }
 
@@ -23,7 +23,7 @@
   letter-spacing: 0.04em;
   color: var(--text-color);
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 1em;
 }
 
 .hdLink::after {
@@ -47,4 +47,52 @@
   font-weight: var(--fw-bold);
   color: var(--point-color);
   letter-spacing: -1px;
+}
+
+.hdItem {
+  position: relative;
+}
+
+.hdDropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  padding-top: 0.5em;
+  overflow: hidden;     
+  max-height: 0;
+  transition: max-height 0.35s ease;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.hdDropdownOpen {
+  max-height: 30rem;
+}
+
+.hdDropdownInner {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.8em;
+  background-color: #2f4f3e;
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.hdDropdownOpen .hdDropdownInner {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hdSubLink {
+  padding: 0.4em;
+  color: #fff;
+  font-size: 1em;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.hdSubLink:hover {
+  opacity: 1;
 }

@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="titleL">Botanical</h1>
           <p className="titleS">by Seongnam Garden</p>
         </div>
-        {/* 영상 영역 - 추후 <video> 태그로 교체 */}
+        {/* 영상 */}
         <div className="heroVideoWrap">
           <video className="heroVideo" src={video} autoPlay muted loop></video>
         </div>

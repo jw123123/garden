@@ -16,7 +16,6 @@
   align-items: start;
 }
 
-/* 계절 사이드바 */
 .seasonLabel {
   display: flex;
   flex-direction: column;
@@ -64,7 +63,6 @@
   transition: opacity var(--transition);
 }
 
-/* 이미지 그리드 - 2분할 */
 .seasonGrid {
   position: relative;
   display: grid;
@@ -138,13 +136,4 @@
   40%  { transform: scale(1.4); }
   70%  { transform: scale(0.9); }
   100% { transform: scale(1.18); }
-}
-
-
-@media (max-width: 720px) {
-  .seasonlayout { grid-template-columns: 1fr; }
-  .seasonsidebar { flex-direction: row; gap: 8px; position: static; }
-  .seasonTab { font-size: 20px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-md); }
-  .seasonTab:first-child { border-top: 1px solid var(--border); }
-  .seasonGrid { grid-template-rows: 280px; }
 }

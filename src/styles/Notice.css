@@ -1,11 +1,11 @@
 .notice {}
 
-.notice__inner {
+.noticeInner {
   margin: 0 auto;
   padding: var(--section-pad);
 }
 
-.notice__header {
+.noticeHeader {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -22,13 +22,12 @@
   line-height: inherit;
 }
 
-/* 탭 버튼 그룹 */
-.notice__tabs {
+.noticeTabs {
   display: flex;
   gap: 8px;
 }
 
-.notice__tab {
+.noticeTab {
   padding: 6px 20px;
   border-radius: 20px;
   font-size: var(--fs-sub);
@@ -36,39 +35,36 @@
   background: transparent;
 }
 
-.notice__tab:hover {
+.noticeTab:hover {
   border-color: var(--text-font);
 }
 
-.notice__tab.active {
+.noticeTab.active {
   background: var(--green-light);
   color: #fff;
   border: 0;
 }
 
-
-
-/* 아이템 리스트 */
-.notice__list {
+.noticeList {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
 }
 
-.notice__item {
+.noticeItem {
   padding: 40px 20px 40px 0;
   border-top: 1px solid var(--border-light);
   cursor: pointer;
 }
 
-.notice__item:first-child, .notice__item:nth-child(2) {
+.noticeItem:first-child, .noticeItem:nth-child(2) {
   border-top: 1px solid var(--text-color); 
 }
 
-.notice__item:last-child, .notice__item:nth-last-child(2) {
+.noticeItem:last-child, .noticeItem:nth-last-child(2) {
   border-bottom: 1px solid var(--text-color); 
 }
-.notice__item:nth-child(2n){
+.noticeItem:nth-child(2n){
 padding-left: 20px;
 }
 
@@ -79,7 +75,7 @@ padding-left: 20px;
    padding-bottom: 20px;
 }
 
-.notice__tag {
+.noticeTag {
   display: block;
   width: inherit;
   font-size: var(--fs-etc);
@@ -89,47 +85,41 @@ padding-left: 20px;
   color: #fff;
 }
 
-.notice__tag--공지, .notice__tab--공지.active {
+.noticeTag공지, .noticeTab공지.active {
   background: var(--red);
 }
 
-.notice__tag--교육, .notice__tab--교육.active {
+.noticeTag교육, .noticeTab교육.active {
   background: var(--blue);
 }
 
-.notice__tag--채용, .notice__tab--채용.active {
+.noticeTag채용, .noticeTab채용.active {
   background: var(--yellow);
 }
 
-.notice__item-title {
+.noticeItemTitle {
   font-size: var(--fs-main);
   line-height: 1.7;
   color: var(--text-main);
   margin-bottom: 8px;
 }
 
-.notice__item-date {
+.noticeItemDate {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: var(--fs-etc);
   font-weight: var(--fw-light);
 }
-.notice__item-date:before {
+.noticeItemDate:before {
   content: '\ebcc';
   font-size: 19px;
 }
 
-/* 빈 상태 */
-.notice__empty {
+.noticeEmpty {
   grid-column: span 2;
   padding: 48px 0;
   text-align: center;
   color: var(--text-hint);
   font-size: 14px;
-}
-
-@media (max-width: 640px) {
-  .notice__list { grid-template-columns: 1fr; }
-  .notice__item:nth-child(even) { padding-left: 0; border-left: none; }
 }

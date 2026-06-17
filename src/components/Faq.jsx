@@ -27,8 +27,8 @@ export default function Faq() {
 
   return (
     <section className="faq">
-      <div className="faq__inner">
-        <div className="faq__header">
+      <div className="faqInner">
+        <div className="faqHeader">
           <h2 className="faqTitle">자주하는 질문</h2>
           <a href="#" className="more">더보기</a>
         </div>
@@ -36,21 +36,21 @@ export default function Faq() {
         {FAQS.map((item, i) => {
           const isOpen = openIdx === i;
           return (
-            <div key={i} className="faq__item">
+            <div key={i} className="faqItem">
               {/* Q 버튼 */}
-              <button className="faq__q" onClick={() => toggle(i)}>
-                <span className="faq__q-mark">Q.</span>
-                <span className="faq__q-text">{item.q}</span>
+              <button className="faqQ" onClick={() => toggle(i)}>
+                <span className="faqQmark">Q.</span>
+                <span className="faqQtext">{item.q}</span>
                 <span className={`faqArrow${isOpen ? ' icon faqOpen' : ' icon'}`}>
                 </span>
               </button>
 
               {/* A 슬라이드다운 */}
-              <div className={`faq__answer${isOpen ? ' faq__answer--open' : ''}`}>
-                <div className="faq__answer-inner">
-                  <div className="faq__a">
-                    <span className="faq__a-mark">A.</span>
-                    <p className="faq__a-text">{item.a}</p>
+              <div className={`faqAnswer${isOpen ? ' faqAnswerOpen' : ''}`}>
+                <div className="faqAnswerInner">
+                  <div className="faqA">
+                    <span className="faqAmark">A.</span>
+                    <p className="faqAtext">{item.a}</p>
                   </div>
                 </div>
               </div>

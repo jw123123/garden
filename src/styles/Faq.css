@@ -1,12 +1,12 @@
 .faq {
 }
 
-.faq__inner {
+.faqInner {
   margin: 0 auto;
   padding: var(--section-pad);
 }
 
-.faq__header {
+.faqHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@
 }
 
 /* 아이템 */
-.faq__item {
+.faqItem {
   margin-bottom: 20px;
   border: 1px solid var(--border-light);
   border-radius: 30px;
@@ -27,7 +27,7 @@
   padding: 25px 30px;
 }
 
-.faq__q {
+.faqQ {
   width: 100%;
   background: none;
   border: none;
@@ -40,16 +40,16 @@
   font-family: var(--font-body);
 }
 
-.faq__q:hover {
+.faqQ:hover {
   color: var(--green-accent);
 }
 
-.faq__q-mark {
+.faqQmark {
   font-size: 20px;
   width: 16px;
 }
 
-.faq__q-text {
+.faqQtext {
   font-size: var(--fs-sub);
   color: var(--text-main);
   flex: 1;
@@ -67,33 +67,33 @@
 }
 
 /* 답변 슬라이드 */
-.faq__answer {
+.faqAnswer {
   display: grid;
   grid-template-rows: 0fr;
   width: 80%;
   transition: grid-template-rows 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.faq__answer--open {
+.faqAnswerOpen {
   grid-template-rows: 1fr;
 }
 
-.faq__answer-inner {
+.faqAnswerInner {
   overflow: hidden;
 }
 
-.faq__a {
+.faqA {
   display: flex;
   padding: 30px 0 0;
   gap: 15px;
 }
 
-.faq__a-mark {
+.faqAmark {
   font-size: 20px;
   width: 16px;
   color: var(--red);
 }
 
-.faq__a-text {
+.faqAtext {
   font-size: var(--fs-sub);
 }

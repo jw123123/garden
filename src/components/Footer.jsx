@@ -2,10 +2,10 @@ import '../styles/Footer.css';
 import logo from '../images/logo.png'
 
 const NAV_COLS = [
-  { title: '식물원소개', items: ['식물원안내', '시설안내', '오시는길', '조직도'] },
-  { title: '방문안내', items: ['입장 프로그램', '체험 예약', '단체 예약', '어린이'] },
-  { title: '체험 / 교육', items: ['초등학교', '중학교', '고등학교', '교육프로그램'] },
-  { title: '카페나비', items: ['음료/디저트', '주요메뉴', '공간안내'] },
+  { title: '식물원소개', items: ['성남시 식물원', '식물원안내', '식물원 현항', '오시는길'] },
+  { title: '체험안내', items: ['프로그램안내', '예약신청', '예약확인', '강사소개'] },
+  { title: '자료실', items: ['생태자료실', '보도자료', '교육활동자료'] },
+  { title: '커뮤니티', items: ['공지사항', 'FAQ', '자유게시판'] },
 ];
 
 const HOURS = [
@@ -23,33 +23,33 @@ const INFO = [
 export default function Footer() {
   return (
     <footer className="ft">
-      <div className="ft__inner">
+      <div className="ftInner">
         {/* 관람시간 */}
         <div className="ftGardenInfo">
-          <div className="ft__hours">
-            <h2 className="ft__hours-title">관람시간</h2>
+          <div className="ftHours">
+            <h2 className="ftHoursTitle">관람시간</h2>
             <div>
-              <div className="ft__hours-grid">
+              <div className="ftHoursGrid">
                 {HOURS.map((h) => (
-                  <div key={h.label} className="ft__hour-item">
-                    <p className="ft__hour-label">{h.label}</p>
-                    <p className="ft__hour-time">{h.time}</p>
+                  <div key={h.label} className="ftHourItem">
+                    <p className="ftHourLabel">{h.label}</p>
+                    <p className="ftHourTime">{h.time}</p>
                   </div>
                 ))}
               </div>
-              <span className="ft__hour-note">
+              <span className="ftHourNote">
                 설날 (1/1), 구정 (음력 1/1), 추석 (음력 8/15) 휴관
               </span>
             </div>
           </div>
 
           {/* 링크 */}
-          <div className="ft__nav">
+          <div className="ftNav">
             {NAV_COLS.map((col) => (
               <div key={col.title}>
-                <p className="ft__nav-col-title">{col.title}</p>
+                <p className="ftNavColTitle">{col.title}</p>
                 {col.items.map((item) => (
-                  <a key={item} href="#" className="ft__nav-link">{item}</a>
+                  <a key={item} href="#" className="ftNavLink">{item}</a>
                 ))}
               </div>
             ))}
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
 
         {/* 하단 */}
-        <div className="ft__bottom">
+        <div className="ftBottom">
           <div className="ftRight">
             <img src={logo} alt="식물원로고" />
             <dl className="ftInfo">
@@ -70,11 +70,11 @@ export default function Footer() {
             </dl>
           </div>
           <div className="ftLeft">
-            <div className="ft__legal">
+            <div className="ftLegal">
               <span>개인정보처리방침</span>
               <span>이메일무단수집거부</span>
             </div>
-            <span className="ft__brand">
+            <span className="ftBrand">
               COPYRIGHT &copy; 2026. Seongnam City. All Rights Reserved.
             </span>
           </div>

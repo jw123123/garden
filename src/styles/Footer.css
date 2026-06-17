@@ -3,7 +3,7 @@
   color: rgba(232, 240, 232, 0.85);
 }
 
-.ft__inner {
+.ftInner {
   margin: 0 auto;
   padding: 50px var(--padding-l) 30px;
 }
@@ -17,67 +17,61 @@
 
 
 /* 관람시간 블록 */
-.ft__hours {
+.ftHours {
   align-items: flex-start;
   padding-bottom: 40px;
   margin-bottom: 48px;
 }
 
-.ft__hours-title {
-  /* font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 700;
-  color: #ffffff;
-  flex-shrink: 0;
-  width: 120px; */
+.ftHoursTitle {
   color: #fff;
   text-align: center;
 }
 
-.ft__hours-grid {
+.ftHoursGrid {
   display: flex;
   gap: 60px;
   padding-bottom: 50px;
   justify-content: center;
 }
 
-.ft__hour-item {
+.ftHourItem {
   font-size: var(--fs-sub);
   text-align: center;
   
 }
 
-.ft__hour-label {
+.ftHourLabel {
   color: #fff;
   margin-bottom: 4px;
 }
 
-.ft__hour-time {
+.ftHourTime {
   font-weight: 500;
   color: #86EFAC;
 }
 
-.ft__hour-note {
+.ftHourNote {
   font-size: var(--fs-sub);
   color: var(--red);
 }
 
 /*사이트맵 */
-.ft__nav {
+.ftNav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 70px;
   padding-bottom: 48px;
 }
 
-.ft__nav-col-title {
+.ftNavColTitle {
   font-size: var(--fs-sub);
   font-weight: var(--fw-bold);
   color: #fff;
   margin-bottom: 14px;
 }
 
-.ft__nav-link {
+.ftNavLink {
   display: block;
   padding-bottom: 10px;
   font-size: var(--fs-etc);
@@ -85,12 +79,12 @@
   transition: color var(--transition);
 }
 
-.ft__nav-link:hover {
+.ftNavLink:hover {
   color: rgba(255,255,255,0.75);
 }
 
 /* 하단 바 */
-.ft__bottom {
+.ftBottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,7 +122,7 @@
   font-size: var(--fs-etc);
 }
 
-.ft__legal {
+.ftLegal {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
@@ -136,16 +130,11 @@
   padding-bottom: 15px;
 }
 
-.ft__legal span {
+.ftLegal span {
   cursor: pointer;
   transition: color var(--transition);
 }
 
-.ft__brand {
+.ftBrand {
   color: rgba(255,255,255,0.5);
-}
-
-@media (max-width: 720px) {
-  .ft__nav { grid-template-columns: repeat(2, 1fr); }
-  .ft__hours { flex-direction: column; gap: 20px; }
 }
