@@ -33,12 +33,12 @@
 
 # 🛠 Tech Stack
 
-| Front-end | Design | Tool |
-| --------- | ------- | -------- |
-| React | Figma | VS Code |
-| JavaScript | Photoshop | Git |
-| SCSS | Illustrator | Claude AI |
-| jQuery | | |
+| Front-end | Design | Tool | AI |
+| --------- | ------- | -------- | -------- |
+| React | Figma | VS Code | Claude AI |
+| HTML | Photoshop | Git | chatGPT AI |
+| CSS | Illustrator | | |
+| JavaScript | PremierePro | | |
 
 ---
 
@@ -48,12 +48,11 @@
 
 src
 ├── assets
-│    ├── images
-│    └── video
 ├── components
-├── pages
+├── images
 ├── styles
 ├── App.js
+├── Home.js
 └── index.js
 
 ```
