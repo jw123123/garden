@@ -74,7 +74,7 @@ src
 - Footer 사이트맵 및 관람 정보 제공
 
 > Preview Image
-![page_gif](https://github.com/user-attachments/assets/5d4052f9-770a-483a-b2d0-846aa89ecfa1)
+<img width="400" height="224" alt="Image" src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" />
 
 ---
 
