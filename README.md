@@ -72,7 +72,7 @@ src
 - FAQ Accordion 구현
 - Footer 사이트맵 및 관람 정보 제공
 
-<img src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" width="100%" align="right">
+<img src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" width="45%" align="right">
 
 ---
 
