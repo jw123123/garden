@@ -128,7 +128,7 @@ React 컴포넌트 기반 개발 방식과 상태 관리, 다양한 인터랙션
 ## 🔗 Links
 
 - 최종 결과물: https://jw123123.github.io/garden/
-- 피그마 디자인시안: https://www.figma.com/design/C1DIAGhiFlwU9JjW1lpgnr/%EC%84%B1%EB%82%A8%EC%8B%9C%EC%8B%9D%EB%AC%BC%EC%9B%90-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=175-195&t=cBQFMU0OIkyWZz2x-1
+- 피그마 디자인시안:https://www.figma.com/design/C1DIAGhiFlwU9JjW1lpgnr/%EC%84%B1%EB%82%A8%EC%8B%9C%EC%8B%9D%EB%AC%BC%EC%9B%90-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=175-195&t=cBQFMU0OIkyWZz2x-1
 - 포트폴리오: [garden.pdf](https://github.com/user-attachments/files/29042646/garden.pdf)
 
 ---
