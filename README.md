@@ -58,7 +58,7 @@ src
 
 ```
 
-(아키텍처 이미지 또는 폴더 구조 이미지 추가 예정)
+<img width="196" height="220" alt="Image" src="https://github.com/user-attachments/assets/0cebb5ea-ca2b-481d-b9a5-9a64a825ddef" />
 
 ---
 
