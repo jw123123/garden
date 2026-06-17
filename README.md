@@ -63,17 +63,28 @@ src
 
 # ✨ 주요 기능
 
+<table>
+<tr>
+<td width="55%" valign="top">
+
 - GNB Hover 및 Depth2 Slide Toggle
 - Hero 영상과 대형 타이포 구현
-- 계절 Hover에 따른 이미지 변경
+- 계절 Hover 이미지 변경
 - 좋아요(하트) 카운트 인터랙션
 - 프로그램 카드 Hover Overlay
 - 소식 카테고리 필터링
 - FAQ Accordion 구현
 - Footer 사이트맵 및 관람 정보 제공
 
-> Preview Image
-<img width="400" height="224" alt="Image" src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" />
+</td>
+
+<td width="45%" align="center">
+
+<img src="[./images/page.gif](https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b)" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
