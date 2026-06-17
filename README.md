@@ -80,7 +80,7 @@ src
 
 <td width="45%" align="center">
 
-<img src="[./images/page.gif](https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b)" width="100%">
+<img src="https://github.com/user-attachments/assets/eb428bc3-253f-40a6-9795-d6163fc0f61b" width="100%">
 
 </td>
 </tr>
